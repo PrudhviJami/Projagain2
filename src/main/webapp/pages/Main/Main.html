@@ -1,9 +1,36 @@
 <wm-page name="mainpage" pagetitle="Main">
-    <wm-header content="header" name="header" height="auto"></wm-header>
+    <wm-header name="header" content="header" height="auto"></wm-header>
     <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
     <wm-content name="content">
-        <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
-        <wm-page-content columnwidth="10" paddingleft="15" paddingright="15" name="mainContent">
+        <wm-left-panel name="leftpanel" content="leftnav" columnwidth="2"></wm-left-panel>
+        <wm-page-content name="mainContent" columnwidth="10" padding="unset 15px">
+            <wm-form title="Form" name="createTable1Form1" captionposition="left" dataset="bind:Variables.TestDBMariaCreateTable1.dataSet" enctype="application/x-www-form-urlencoded" errormessage="" method="post" captionalign="left">
+                <wm-layoutgrid name="layoutgrid1" columns="1">
+                    <wm-gridrow name="gridrow1"></wm-gridrow>
+                    <wm-gridrow name="gridrow2">
+                        <wm-composite name="composite1">
+                            <wm-label class="h4 control-label" caption="Table1 Details" name="label1"></wm-label>
+                        </wm-composite>
+                    </wm-gridrow>
+                    <wm-gridrow name="gridrow3">
+                        <wm-gridcolumn name="gridcolumn1" columnwidth="12">
+                            <wm-form-field type="string" readonly="false" widget="text" displayname="Column2" name="Table1_column2" show="true" key="Table1.column2"></wm-form-field>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                    <wm-gridrow name="gridrow4">
+                        <wm-gridcolumn name="gridcolumn2" columnwidth="12">
+                            <wm-form-field type="string" readonly="false" widget="text" displayname="Column3" name="Table1_column3" show="true" key="Table1.column3"></wm-form-field>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                    <wm-gridrow name="gridrow5">
+                        <wm-gridcolumn name="gridcolumn3" columnwidth="12">
+                            <wm-form-field type="integer" readonly="false" widget="number" displayname="Id" name="Table1_id" show="true" textalign="right" key="Table1.id"></wm-form-field>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                </wm-layoutgrid>
+                <wm-form-action class="form-reset btn-secondary" type="reset" iconclass="wi wi-refresh" display-name="Reset" key="reset"></wm-form-action>
+                <wm-form-action class="form-save btn-success" type="submit" iconclass="wi wi-save" display-name="Save" key="save"></wm-form-action>
+            </wm-form>
         </wm-page-content>
     </wm-content>
     <wm-footer name="footer" content="footer"></wm-footer>

@@ -1,1 +1,25 @@
-{ }
+{
+  "TestDBMariaCreateTable1" : {
+    "_id" : "wm-TestDBMariaCreateTable1-wm.ServiceVariable-1556116894746",
+    "name" : "TestDBMariaCreateTable1",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "com.projagain2.testdbmaria.Table1",
+    "service" : "TestDBMaria",
+    "operation" : "createTable1",
+    "operationId" : "Table1Controller_createTable1",
+    "operationType" : "post",
+    "serviceType" : "DataService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "Table1"
+  }
+}
